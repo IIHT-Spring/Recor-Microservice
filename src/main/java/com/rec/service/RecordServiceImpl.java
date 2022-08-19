@@ -29,7 +29,8 @@ public class RecordServiceImpl implements IRecordService {
 	@Override
 	public List<Record> getRecordOfEmployee(Long eId) {
 		// TODO Auto-generated method stub
-		return list.stream().filter(record -> record.geteId().equals(eId)).collect(Collectors.toList());
+		return list.stream().filter(record -> record.geteId().equals(eId)).collect
+				 (Collectors.toList());
 	}
 
 }
